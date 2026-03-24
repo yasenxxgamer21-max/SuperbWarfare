@@ -11,8 +11,12 @@ base {
 }
 
 repositories {
-    maven { url = "https://maven.terraformersmc.com/" } // لمود Trinkets
-    maven { url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" } // لـ GeckoLib
+    mavenCentral()
+    maven { url = "https://maven.fabricmc.net/" }
+    maven { url = "https://maven.terraformersmc.com/releases/" }
+    maven { url = "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/" }
+    maven { url = "https://maven.blamejared.com/" }
+    maven { url = "https://jitpack.io" }
 }
 
 dependencies {
