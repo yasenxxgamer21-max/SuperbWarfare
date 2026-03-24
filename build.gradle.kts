@@ -25,14 +25,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:0.15.11"
 
     // Fabric API الأساسي
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.0+1.21.1"
-
-    // مكتبة GeckoLib للأنميشن (نسخة 1.21.1)
-    modImplementation "software.bernie.geckolib:geckolib-fabric-1.21.1:4.5.2"
-
-    // مكتبة Trinkets (بديل Curios في فابريك)
-    modImplementation "dev.emi:trinkets:3.9.0"
-}
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.102.0+1.21.1 
 
 processResources {
     inputs.property "version", project.version
