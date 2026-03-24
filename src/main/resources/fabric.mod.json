@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "superbwarfare",
+  "version": "${version}",
+  "name": "Superb Warfare",
+  "description": "Advanced Military Combat Mod for Fabric 1.21.1",
+  "authors": [
+    "Mercurows",
+    "YourName"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Mercurows/SuperbWarfare",
+    "sources": "https://github.com/Mercurows/SuperbWarfare"
+  },
+  "license": "MIT",
+  "icon": "assets/superbwarfare/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mercurows.superbwarfare.SuperbWarfare"
+    ]
+  },
+  "mixins": [
+    "superbwarfare.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "geckolib": ">=4.5.2"
+  },
+  "suggests": {
+    "trinkets": "*"
+  }
+}
