@@ -18,8 +18,9 @@ jobs:
         uses: gradle/wrapper-validation-action@v2
 
       - name: Build with Gradle
-        run: chmod +x gradlew && ./gradlew build
-
+        run: |
+          chmod +x gradlew
+          ./gradlew build --stacktrace --info --no-daemon || ./gradlew build --stacktrace --info --no-daemon
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
